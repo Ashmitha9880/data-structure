@@ -667,9 +667,29 @@ OUTPUT:
 
 	
 	
+**4.C++ PROGRAM TO IMPLEMENT REVERSE ORDER OF ARRAY ELEMENT**
 	
+	#include<iostream>
+using namespace std;<br>
+int main()<br>
+{<br>
+    int arr[10], i;<br>
+    cout<<"Enter 10 Array Elements: ";<br>
+    for(i=0; i<10; i++)<br>
+        cin>>arr[i];<br>
+    cout<<"\nThe Original Array is:\n";<br>
+    for(i=0; i<10; i++)<br>
+        cout<<arr[i]<<" ";<br>
+    cout<<"\n\nThe Reverse of Given Array is:\n";<br>
+    for(i=(10-1); i>=0; i--)<br>
+        cout<<arr[i]<<" ";<br>
+    cout<<endl;<br>
+    return 0;<br>
+}<br>
+
+OUTPUT:	
 	
-	
+![image](https://user-images.githubusercontent.com/97940767/154901732-a6dce0f1-5b23-43f3-88a3-f0721c2c03ba.png)
 	
 	
 	
