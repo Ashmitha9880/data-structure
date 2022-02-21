@@ -617,9 +617,9 @@ temp = temp->next;<br>
 }<br>
 return 0;<br>
 }<br>
-
-
 OUTPUT:
+
+
  ![image](https://user-images.githubusercontent.com/97940767/154896537-afc6c835-1941-44a6-be99-596525cb3525.png)
 
 
