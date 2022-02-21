@@ -663,7 +663,8 @@ int main()<br>
  
 OUTPUT:
 	
-	![image](https://user-images.githubusercontent.com/97940767/154900837-3aeeb512-e353-4a77-978c-5cbbca496ffc.png)
+	![image](https://user-images.githubusercontent.com/97940767/154901029-4f3f3762-8869-4a9b-a3df-24eacdb12ede.png)
+
 
 
 
