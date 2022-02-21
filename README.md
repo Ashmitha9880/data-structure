@@ -537,3 +537,101 @@ void single_llist::display()
 ![image](https://user-images.githubusercontent.com/97940767/154895800-315ecb3f-7cfa-455c-99f1-9f4ab9dfcb80.png)
 ![image](https://user-images.githubusercontent.com/97940767/154895871-a2c2c268-8025-44d3-94e4-a290a9f347b9.png)
 ![image](https://user-images.githubusercontent.com/97940767/154895917-d036f56c-7e89-4afe-801d-4adcb84b075f.png)
+ 
+ 
+ 
+ 
+ C++ PROGRAM TO SPLIT GIVEN LINKLIST INTO TWO IN SUCH A WAY THAT THE GIVEN ELEMENT 'ELE' MUST BE THE 1ST NODE OF 2ND LINKEDLIST
+ 
+
+#include<iostream>
+using namespace std;
+struct Node{
+int value;
+struct Node *next;
+};
+struct Node* head = NULL;
+struct Node* sHead = NULL;
+struct Node* temp = NULL;
+void insert(int new_data){
+struct Node* new_node = new Node(); //(struct Node*)malloc(sizeof(struct Node));
+new_node->value = new_data;
+new_node->next = head;
+head = new_node;
+}
+int n;
+int ele;
+int splitIndex;
+int main(){
+int i;
+cout<<"Enter number of elements you want in the list\t";
+cin>>n;
+cout<<"Enter elements :" <<endl;
+for(i=0;i<n;i++){
+cin>>ele;
+insert(ele);
+}
+cout<<"\nList of elements : "<<endl;
+Node *t;
+t = head;
+while(t != NULL){
+cout<<t->value<<"\t";
+t = t->next;
+}
+cout<<"\n\nEnter the position you want the list to split ";
+cin>>splitIndex;
+while(splitIndex < 0 || splitIndex > n-1){
+cout<<"Invalid position. Try again."<<endl;
+cin>>splitIndex;
+}
+temp = head;
+for(i=0;i<=splitIndex;i++){
+if(i==splitIndex-1){
+Node *tN;
+tN = temp->next;
+sHead = tN;
+temp->next = NULL;
+break;
+}
+temp = temp->next;
+}
+temp = head;
+if(temp == NULL){
+cout<<"\nFirst list is empty"<<endl;
+}else{
+cout<<"\n\nFirst list element "<<endl;
+while(temp != NULL){
+cout<<temp->value<<"\t";
+temp = temp->next;
+}
+}
+temp = sHead;
+if(temp == NULL){
+cout<<"\nSecond list is empty"<<endl;
+}else{
+cout<<"\n\nSecond list elements "<<endl;
+while(temp != NULL){
+cout<<temp->value<<"\t";
+temp = temp->next;
+}
+}
+return 0;
+}
+
+
+OUTPUT:
+ ![image](https://user-images.githubusercontent.com/97940767/154896537-afc6c835-1941-44a6-be99-596525cb3525.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
