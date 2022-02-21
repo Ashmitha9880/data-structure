@@ -763,11 +763,44 @@ int main() {<br>
 ![image](https://user-images.githubusercontent.com/97940767/154904508-7693d04c-f8f7-42e3-ad11-272a060c5e4b.png)
 	
 	
+**6. C++ PROGRAM TO IMPLEMENT THE BINARY SEARCH**
+	
+	#include<iostream>
+using namespace std;<br>
+int main()<br>
+{<br>
+    int i, arr[10], num, first, last, middle;<br>
+    cout<<"Enter 10 Elements (in ascending order): ";<br>
+    for(i=0; i<10; i++)<br>
+        cin>>arr[i];<br>
+    cout<<"\nEnter Element to be Search: ";<br>
+    cin>>num;<br>
+    first = 0;<br>
+    last = 9;<br>
+    middle = (first+last)/2;<br>
+    while(first <= last)<br>
+    {<br>
+        if(arr[middle]<num)<br>
+            first = middle+1;<br>
+        else if(arr[middle]==num)<br>
+        {<br>
+            cout<<"\nThe number, "<<num<<" found at Position "<<middle+1;<br><br>
+            break;<br>
+        }<br>
+        else<br>
+            last = middle-1;<br>
+        middle = (first+last)/2;<br>
+    }<br>
+    if(first>last)<br>
+        cout<<"\nThe number, "<<num<<" is not found in given Array";<br>
+    cout<<endl;<br>
+    return 0;<br>
+}<br>
 	
 	
+**OUTPUT:	**
 	
-	
-	
+![image](https://user-images.githubusercontent.com/97940767/154905389-b94b32ef-f013-40d0-8500-a4f18c502d49.png)
 	
 	
 	
