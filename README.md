@@ -1147,6 +1147,7 @@ void BST::display(node *ptr, int level)  <br>
 } <br>
 
 
+![image](https://user-images.githubusercontent.com/97940767/155078630-74dbaf58-690f-4abc-b860-05333ccf3f1e.png)
 
 
 
