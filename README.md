@@ -1154,7 +1154,84 @@ void BST::display(node *ptr, int level)  <br>
 
 
 
+**Write a program to adding 10 number by using switch statement**
 
+#include<iostream><br>
+using namespace std;<br>
+int main()<br>
+{<br>
+	int ch,val;<br>
+	cout<<"1.adding 10 numbers using for"<<endl;<br>
+	cout<<"2.adding 10 numbers using while"<<endl;<br>
+	cout<<"3.adding 10 numbers using do while"<<endl;<br>
+	cout<<"4.exit"<<endl;<br>
+	do{<br>
+		cout<<"enter a choice "<<endl;<br>
+		cin>>ch;<br>
+		switch(ch)<br>
+		{<br>
+			case 1:<br>
+				{<br>
+				int num, sum=0;<br>
+  				cout<<"Please enter 10 numbers:"<<endl;<br>
+				for(int i=0; i<10; i++)<br>
+ 				 {
+ 				 	 // input is stored in num<br>
+   					 cin>>num;<br>
+   					// adding 10 numbers<br>
+   					sum=sum+num;<br>
+				 }
+  				cout << "\n The sum of 10 numbers is: "<<sum << endl;<br>
+  				break;<br>
+				}<br>
+			case 2:<br>
+				{<br>
+					int n, i=0, num, sum=0;<br>
+   					 cout<<"Enter the value of n: ";<br>
+  					  cin>>n;<br>
+   					 cout<<"Enter "<<n<<" numbers: ";<br>
+    
+   					 while(i<n)<br>
+    					{<br>
+   				     		cin>>num;<br>
+      				 		 sum = sum+num;<br>
+        					i++;<br>
+    					}<br>
+    
+   					 cout<<"\nSum = "<<sum;<br>
+ 					   cout<<endl;<br>
+ 					   break;<br>
+				}
+				case 3: <br>
+				{
+					int i=0,sum=0,num,n;<br>
+					cout<<"enter the value for n";<br>
+					cin>>n;<br>
+					cout<<"enter the 10 elements"<<endl;<br>
+					do <br>
+					{
+						cin>>num;<br>
+						sum=sum+num;<br>
+						i++;<br>
+					}<br>
+					while(i<n);<br>
+						cout<<"sum="<<sum;<br>
+						break;	<br>				
+					
+					}<br>
+					case 4:<br>
+					{<br>
+					
+						cout<<"exit";<br>
+						break;<br>
+					}<br>
+					default:<br>
+					cout<<"invalid choice"<<endl;
+		}<br>
+	}<br>
+	while(ch!=4);<br>
+	return 0;<br>
+	}<br>
 
 	
 	
