@@ -1334,11 +1334,71 @@ OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97940767/155931281-5bf0b552-aa20-404f-af0e-169c5463aa7c.png)
 
 
+**Write C++ program for implementing the Heap Sort technique.
+**
 
+#include <iostream>
+using namespace std;
+void MaxHeapify (int a[], int i, int n)<br>
+{
+	int j, temp;<br>
 
-
+	temp = a[i];<br>
+	j = 2*i;<br>
+	while (j <= n)<br>
+	{
+		if (j < n && a[j+1] > a[j])<br>
+		j = j+1;<br>
+		if (temp > a[j])<br>
+			break;<br>
+		else if (temp <= a[j])<br>
+		{<br>
+			a[j/2] = a[j];<br>
+			j = 2*j;<br>
+		}<br>
+	}<br>
+	a[j/2] = temp;<br>
+	return;<br>
+}<br>
+void HeapSort(int a[], int n)<br>
+{<br>
+	int i, temp;<br>
+	for (i = n; i >= 2; i--)<br>
+	{<br>
+		temp = a[i];<br>
+		a[i] = a[1];<br>
+		a[1] = temp;<br>
+		MaxHeapify(a, 1, i - 1);<br>
+	}<br>
+}<br>
+void Build_MaxHeap(int a[], int n)<br>
+{<br>
+	int i;<br>
+	for(i = n/2; i >= 1; i--)<br>
+		MaxHeapify(a, i, n);<br>
+}<br>
+int main()<br>
+{<br>
+int n, i,arr[100];<br>
+	cout<<"\nEnter the number of data element to be sorted: ";<br>
+	cin>>n;<br>
+	n++;<br>
+	for(i=1;i<n;i++)<br>
+	 {<br>
+	 cout<<"Enter element"<<i<<":";<br>
+	 cin>>arr[i];<br>
+	 }<br>
+	Build_MaxHeap(arr, n-1);<br>
+	HeapSort(arr, n-1);<br>
+	cout<<"\nSorted Data ";<br>
+	for (i = 1; i < n; i++)<br>
+		cout<<" "<<arr[i];<br>
+	return 0;<br>
+}<br>
 		       
-		       
+OUTPUT:
+				  
+![image](https://user-images.githubusercontent.com/97940767/155934687-2736f05f-2fb2-4241-b6ba-410902f52272.png)
 		       
 		       
 		       
