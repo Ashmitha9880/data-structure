@@ -1236,7 +1236,55 @@ int main()<br>
 	
 ![image](https://user-images.githubusercontent.com/97940767/155083001-c4b56fba-5487-47ec-975f-c29dfc179a13.png)
 	
-	
+**PROGRAM TO IMPLEMENT THE MIN HEAP**
+	#include <iostream>
+#include <conio.h>
+using namespace std;<br>
+void min_heap(int *a, int m, int n){<br>
+   int j, t;<br>
+   t= a[m];<br>
+   j = 2 * m;<br>
+   while (j <= n) {<br>
+      if (j < n && a[j+1] < a[j])<br>
+         j = j + 1;<br>
+      if (t < a[j])<br>
+         break;<br>
+      else if (t >= a[j]) {<br>
+         a[j/2] = a[j];<br>
+         j = 2 * j;<br>
+      }<br>
+   }<br>
+   a[j/2] = t;<br>
+   return;<br>
+}<br>
+void build_minheap(int *a, int n) {<br>
+   int k;<br>
+   for(k = n/2; k >= 1; k--) {<br>
+      min_heap(a,k,n);<br>
+   }<br>
+}<br>
+int main() {<br>
+   int n, i;<br>
+   cout<<"enter no of elements of array\n";<br>
+   cin>>n;<br>
+   int a[30];<br>
+   for (i = 1; i <= n; i++) {<br>
+      cout<<"enter element"<<" "<<(i)<<endl;<br>
+      cin>>a[i];<br>
+   }<br>
+   build_minheap(a, n);<br>
+   cout<<"Min Heap\n";<br>
+   for (i = 1; i <= n; i++) {<br>
+      cout<<a[i]<<endl;<br>
+   }<br>
+   getch();<br>
+}<br>
+		       
+OUTPUT:
+		       
+![image](https://user-images.githubusercontent.com/97940767/155929396-33577dc8-e05d-4d4b-9830-0d7cd612a54e.png)
+		       
+		       
 
 
 
