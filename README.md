@@ -1400,14 +1400,57 @@ OUTPUT:
 				  
 ![image](https://user-images.githubusercontent.com/97940767/155934687-2736f05f-2fb2-4241-b6ba-410902f52272.png)
 		       
+***)SUM OF SETS**		       
+		       
+	#include <iostream>
+using namespace std;<br>
+
+void displaySubset(int subSet[], int size)<br>
+ {<br>
+    for(int i = 0; i < size; i++) <br>
+    {<br>
+      cout << subSet[i] << "  ";<br>
+    }<br>
+      cout << endl;<br>
+}<br>
+
+void subsetSum(int set[], int subSet[], int n, int subSize, int total, int nodeCount ,int sum) <br>
+	{<br>
+    if( total == sum)<br>
+     {<br>
+      displaySubset(subSet, subSize);     <br>
+      subsetSum(set,subSet,n,subSize-1,total-set[nodeCount],nodeCount+1,sum);   <br> 
+      return;<br>
+    }<br>
+   else<br>
+    {<br>
+      for( int i = nodeCount; i < n; i++ ) <br>
+	  {  <br>   
+         subSet[subSize] = set[i];<br>
+         subsetSum(set,subSet,n,subSize+1,total+set[i],i+1,sum);  <br>   
+      }<br><br>
+   }<br>
+}<br>
+
+void findSubset(int set[], int size, int sum) <br>
+{<br>
+   int *subSet = new int[size];    <br>
+   subsetSum(set, subSet, size, 0, 0, 0, sum)<br>;
+   delete[] subSet;<br>
+}<br>
+
+int main() <br>
+{<br>
+   int weights[] = {10, 7, 5, 18, 12, 20, 15};<br>
+   int size = 7;<br>
+   findSubset(weights, size, 35);<br>
+}<br>	       
 		       
 		       
+	OUTPUT:	       
 		       
-		       
-		       
-		       
-		       
-		       
+		![image](https://user-images.githubusercontent.com/97940767/157186105-a952bfe7-f8c5-42d9-883c-034bc114ffee.png)
+       
 		       
 		       
 		       
