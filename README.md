@@ -2364,6 +2364,10 @@ void double_llist::add_after(int value, int pos)
 }
 
 	
+![image](https://user-images.githubusercontent.com/97940767/163159723-711db46e-d60f-49ce-bb07-c154c1bdc78c.png)
+![image](https://user-images.githubusercontent.com/97940767/163159799-67b0cdfc-4047-4ef8-9ff2-b0e0c1ff6b46.png)
+![image](https://user-images.githubusercontent.com/97940767/163159888-011a9594-fe8b-4572-b51c-31bdb88a7629.png)
+![image](https://user-images.githubusercontent.com/97940767/163159963-bb8eef78-eccb-4280-bba7-35d62035b951.png)
 	
 	
 	
