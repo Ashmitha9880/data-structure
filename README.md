@@ -2099,8 +2099,13 @@ return 0;<br>
 **OUTPUT	**
 	
 ![image](https://user-images.githubusercontent.com/97940767/163157134-35ae54ac-bd82-4e51-ad7b-bcce3acbc185.png)
+
 	
-** **
+	
+DOUBLE LINKED LIST
+	
+	
+	
 	#include<iostream>
 #include<cstdio>
 #include<cstdlib>
