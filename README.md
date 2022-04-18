@@ -1,5 +1,5 @@
 # data-structure
-Write a C++ program for implementing Singly Linked list.
+1 )Write a C++ program for implementing Singly Linked list.
 //write a program to impliment the single linked list
 
 #include<iostream> 
@@ -1154,7 +1154,7 @@ void BST::display(node *ptr, int level)  <br>
 
 
 
-**Write a program to adding 10 number by using switch statement**
+ 8.**Write a program to adding 10 number by using switch statement**
 
 #include<iostream><br>
 using namespace std;<br>
@@ -1236,7 +1236,7 @@ int main()<br>
 	
 ![image](https://user-images.githubusercontent.com/97940767/155083001-c4b56fba-5487-47ec-975f-c29dfc179a13.png)
 	
-**PROGRAM TO IMPLEMENT THE MIN HEAP**
+9.**PROGRAM TO IMPLEMENT THE MIN HEAP**
 	#include <iostream>
 #include <conio.h>
 using namespace std;<br>
@@ -1284,7 +1284,7 @@ OUTPUT:
 		       
 ![image](https://user-images.githubusercontent.com/97940767/155929396-33577dc8-e05d-4d4b-9830-0d7cd612a54e.png)
 		       
-**PROGRAM TO FIND MAX HEAP	**	       
+10. **PROGRAM TO FIND MAX HEAP	**	       
 
 #include <iostream>
 using namespace std;
@@ -1334,7 +1334,7 @@ OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97940767/155931281-5bf0b552-aa20-404f-af0e-169c5463aa7c.png)
 
 
-**Write C++ program for implementing the Heap Sort technique.
+11. **Write C++ program for implementing the Heap Sort technique.
 **
 
 #include <iostream>
@@ -1452,7 +1452,7 @@ int main() <br>
 		![image](https://user-images.githubusercontent.com/97940767/157186105-a952bfe7-f8c5-42d9-883c-034bc114ffee.png)
        
 		       
-**WRITE A PROGRAM TO MERGE SHORT	**	       
+12. **WRITE A PROGRAM TO MERGE SHORT	**	       
 		       
 #include<iostream><br><br>
 #include<conio.h><br>
@@ -1533,7 +1533,7 @@ int main()<br>
 	
 ![image](https://user-images.githubusercontent.com/97940767/162889397-d68ead07-1a1a-46f5-97a4-14d83cc044b5.png)
 	
-**WRITE A PROGRAM ON RED BLACK TREE**	
+13. **WRITE A PROGRAM ON RED BLACK TREE**	
 	
 	#include<iostream>
 
@@ -2039,7 +2039,7 @@ int main()
     return 1;
 }
 	
-**WAP to store k keys into an array of size n at the location computed using a hash function, loc = key % n, where k<=n and Key takes values from [1 to m], m>n. Handle the collision using Linear probing technique.**	
+14. **WAP to store k keys into an array of size n at the location computed using a hash function, loc = key % n, where k<=n and Key takes values from [1 to m], m>n. Handle the collision using Linear probing technique.**	
 	
 #include<iostream><br>
 #include<limits.h><br>
@@ -2102,22 +2102,34 @@ return 0;<br>
 
 	
 	
-**DOUBLE LINKED LIST**
+15. **DOUBLE LINKED LIST**
 	
 	
 	
-	#include<iostream>
-#include<cstdio>
-#include<cstdlib>
-using namespace std;
-struct node
+	#include<iostream><br>
+#include<cstdio><br>
+#include<cstdio><br>
+#include<cstdlib><br>
+#include<cstdlib><br>
+using namespace std;<br>
+using namespace std;<br>
+struct node<br>
+struct node<br>
+{<br>
+{<br>
+    int info;<br>
+    int info;<br>
+    struct node *next;<br>
+    struct node *next;<br>
+    struct node *prev;<br>
+    struct node *prev;<br>
+}*start;<br>
+}*start;<br>
+class double_llist<br>
+class double_llist<br>
 {
-    int info;
-    struct node *next;
-    struct node *prev;
-}*start;
-class double_llist
 {
+    public:
     public:
         void create_list(int value);
         void add_begin(int value);
