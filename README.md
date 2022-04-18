@@ -2369,8 +2369,13 @@ void double_llist::add_after(int value, int pos)
     cout<<"List Reversed"<<endl;
 }
 
+**OUTPUT:	**
 	
-	
+![image](https://user-images.githubusercontent.com/97940767/163757939-42d7c089-7235-4d45-a866-638aae322afa.png)
+![image](https://user-images.githubusercontent.com/97940767/163757958-feaea5d2-b6b3-4f15-a4ff-8f384be212d1.png)
+![image](https://user-images.githubusercontent.com/97940767/163758072-199a4b5a-567d-454f-b991-b7060c78b8b5.png)
+![image](https://user-images.githubusercontent.com/97940767/163758103-c6d964b2-9df4-4645-9eea-9238c1e28d66.png)
+![image](https://user-images.githubusercontent.com/97940767/163758137-51adc3ad-5b65-4af1-a4ee-b4771c39f7f7.png)
 	
 	
 	
