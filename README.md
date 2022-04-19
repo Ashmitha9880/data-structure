@@ -2548,10 +2548,11 @@ int main() {<br>
    checkSolution();<br>
 }<br>	       
 		       
-**OUTPUT	**	       
+OUTPUT		       
 
 
-	![image](https://user-images.githubusercontent.com/97940767/163925091-d17f5347-8ee8-4729-ae09-ed3a2ede0baa.png)
+	![image](https://user-images.githubusercontent.com/97940767/163925199-ebe32c87-6035-452c-ab37-57bbb74d32e2.png)
+
 
 	
 	
