@@ -2495,10 +2495,75 @@ void double_llist::add_after(int value, int pos)<br>
 ![image](https://user-images.githubusercontent.com/97940767/163758137-51adc3ad-5b65-4af1-a4ee-b4771c39f7f7.png)
 	
 	
+**16.Write a C++ program for solving the N-Queen’s Problem using backtracking	**
 	
-	
+	#include<iostream><br>
+using namespace std;<br>
+#define N 6<br>
+void printBoard(int board[N][N]) {<br>
+   for (int i = 0; i < N; i++) {<br>
+      for (int j = 0; j < N; j++)<br>
+         cout << board[i][j] << " ";<br>
+         cout << endl;<br>
+   }<br>
+}<br>
+bool isValid(int board[N][N], int row, int col) {<br>
+   for (int i = 0; i < col; i++) //check whether there is queen in the left or not<br>
+      if (board[row][i])<br>
+         return false;<br>
+   for (int i=row, j=col; i>=0 && j>=0; i--, j--)<br>
+      if (board[i][j]) //check whether there is queen in the left upper diagonal or not<br>
+         return false;<br>
+   for (int i=row, j=col; j>=0 && i<N; i++, j--)<br>
+      if (board[i][j]) //check whether there is queen in the left lower diagonal or not<br>
+         return false;<br>
+   return true;<br>
+}<br>
+bool solveNQueen(int board[N][N], int col) {<br>
+   if (col >= N) //when N queens are placed successfully<br>
+      return true;<br>
+   for (int i = 0; i < N; i++) { //for each row, check placing of queen is possible or not<br>
+      if (isValid(board, i, col) ) {<br>
+         board[i][col] = 1; //if validate, place the queen at place (i, col)<br>
+         if ( solveNQueen(board, col + 1)) //Go for the other columns recursively<br>
+            return true;<br>
+         board[i][col] = 0; //When no place is vacant remove that queen<br>
+      }<br>
+   }<br>
+   return false; //when no possible order is found<br>
+}<br>
+bool checkSolution() {<br>
+   int board[N][N];<br>
+   for(int i = 0; i<N; i++)<br>
+   for(int j = 0; j<N; j++)<br>
+   board[i][j] = 0; //set all elements to 0<br>
+   if ( solveNQueen(board, 0) == false ) { //starting from 0th column<br>
+      cout << "Solution does not exist";<br>
+      return false;<br>
+   }<br>
+   printBoard(board);<br>
+   return true;<br>
+}<br>
+int main() {<br>
+   checkSolution();<br>
+}<br>	       
 		       
-		       
-		       
+**OUTPUT	**	       
 
 
+	![image](https://user-images.githubusercontent.com/97940767/163924882-83424e52-e20a-4a37-b682-99664e67e469.png)
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
