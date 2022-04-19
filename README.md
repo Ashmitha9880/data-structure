@@ -2551,7 +2551,7 @@ int main() {<br>
 **OUTPUT	**	       
 
 
-	![image](https://user-images.githubusercontent.com/97940767/163924882-83424e52-e20a-4a37-b682-99664e67e469.png)
+	![image](https://user-images.githubusercontent.com/97940767/163924978-f87f8421-6eac-4ef3-8adf-cdb7aef9ee0b.png)
 
 	
 	
