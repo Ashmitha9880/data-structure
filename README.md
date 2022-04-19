@@ -2551,10 +2551,10 @@ int main() {<br>
 OUTPUT		       
 
 
-	![image](https://user-images.githubusercontent.com/97940767/163925199-ebe32c87-6035-452c-ab37-57bbb74d32e2.png)
-
-
 	
+
+	![image](https://user-images.githubusercontent.com/97940767/163925542-cac605f5-44da-4824-8e16-32f0dfe8b378.png)
+
 	
 	
 	
