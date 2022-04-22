@@ -2581,8 +2581,49 @@ int main()<br>
 	
 ![image](https://user-images.githubusercontent.com/97940767/163940352-5253653c-7491-4c4b-90ae-8d125671f118.png)
 	
+ **17 Splitting an array	**
 	
-	
+#include<iostream><br>
+using namespace std;
+int main()
+{
+	int a[20],i,n,a1[20],a2[20],k1=0,k2=0,pos;
+	cout<<"Enter the size of an array: "<<endl;
+	cin>>n;
+	cout<<"Enter array elements: "<<endl;
+	for(i=0;i<n;i++)
+	{
+	cin>>a[i];
+	}
+	cout<<"Enter the position to split the array into 2"<<endl;
+	cin>>pos;
+	for(i=0;i<n;i++)
+	{
+		if(i<pos)
+		a1[k1++]=a[i];
+		else
+		a2[k2++]=a[i];
+	}
+		cout<<"\nArray elements of array1 \n";
+			for(i=0;i<k1;i++)
+			{
+				 
+                cout<<a1[i]<<endl;
+			}
+			
+			cout<<"\nArray elements of array2 \n";
+			for(i=0;i<k2;i++)
+			{
+				 
+               cout<<a2[i]<<endl;
+			}
+		
+			cout<<"\n";
+			return 0;
+		}
+			
+			
+		
 	
 	
 	
