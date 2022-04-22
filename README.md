@@ -2598,18 +2598,18 @@ int main()<br>
 	cout<<"Enter the position to split the array into 2"<<endl;<br>
 	cin>>pos;<br>
 	for(i=0;i<n;i++)<br>
-	{
-		if(i<pos)
-		a1[k1++]=a[i];
-		else
-		a2[k2++]=a[i];
-	}
-		cout<<"\nArray elements of array1 \n";
-			for(i=0;i<k1;i++)
-			{
+	{<br>
+		if(i<pos)<br>
+		a1[k1++]=a[i];<br>
+		else<br>
+		a2[k2++]=a[i];<br>
+	}<br>
+		cout<<"\nArray elements of array1 \n";<br>
+			for(i=0;i<k1;i++)<br>
+			{<br>
 				 
-                cout<<a1[i]<<endl;
-			}
+                cout<<a1[i]<<endl;<br>
+			}<br>
 			
 			cout<<"\nArray elements of array2 \n";
 			for(i=0;i<k2;i++)
