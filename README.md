@@ -2580,8 +2580,7 @@ int main()<br>
  
 	
 ![image](https://user-images.githubusercontent.com/97940767/163940352-5253653c-7491-4c4b-90ae-8d125671f118.png)
-	
- **17 Splitting an array	**
+	**17.SPLITTING AN ARRAY**
 	
 #include<iostream><br>
 using namespace std;<br>
@@ -2621,11 +2620,79 @@ int main()<br>
 			cout<<"\n";
 			return 0;
 		}
+			       
+			       
+			       
 			
-			
+**18.Write a C++ program to find   MST using Prim’s algorithm..	**
+			       
+			       
 		
+	#include <bits/stdc++.h><br>
+using namespace std;<br>
+#define V 5<br>
+int minKey(int key[], bool mstSet[])<br>
+{<br>
+int min = INT_MAX, min_index;<br>
+for (int v = 0; v < V; v++)<br>
+if (mstSet[v] == false && key[v] < min)<br>
+min = key[v], min_index = v;<br>
+return min_index;<br>
+}<br>
+void printMST(int parent[], int graph[V][V])<br>
+{<br>
+cout<<"Edge \tWeight\n";<br>
+for (int i = 1; i < V; i++)<br>
+cout<<parent[i]<<" - "<<i<<" \t"<<graph[i][parent[i]]<<" \n";<br>
+}<br>
+
+void primMST(int graph[V][V])<br>
+{<br>
+int parent[V];<br>
+int key[V];<br>
+bool mstSet[V];<br>
+for (int i = 0; i < V; i++)<br>
+key[i] = INT_MAX, mstSet[i] = false;<br>
+key[0] = 0;<br>
+parent[0] = -1; // First node is always root of MST<br>
+for (int count = 0; count < V - 1; count++)<br>
+{<br>
+int u = minKey(key, mstSet);<br>
+mstSet[u] = true;<br>
+for (int v = 0; v < V; v++)<br>
+if (graph[u][v] && mstSet[v] == false && graph[u][v] < key[v])<br>
+parent[v] = u, key[v] = graph[u][v];<br>
+}<br>
+printMST(parent, graph);<br>
+}<br>
+int main()<br>
+{<br>
+int graph[V][V] = { { 0, 2, 0, 6, 0 },<br>
+{ 2, 0, 3, 8, 5 },<br>
+{ 0, 3, 0, 0, 7 },<br>
+{ 6, 8, 0, 0, 9 },<br>
+{ 0, 5, 7, 9, 0 } };<br>
+primMST(graph);<br>
+return 0;<br>
+}<br>
+
+**OUTPUT:	**
 	
+![image](https://user-images.githubusercontent.com/97940767/165033921-174b76a2-ae6b-473e-a19c-ed21e0042ecf.png)
 	
-	
-	
+							      
+							      
+							      
+							      
+							      
+							      
+							      
+							      
+							      
+							      
+							      
+							      
+							      
+							      
+							      
 	
