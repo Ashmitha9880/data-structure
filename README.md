@@ -2874,6 +2874,11 @@ int main()
     return 0;
 }
 
+	
+	![image](https://user-images.githubusercontent.com/97940767/165235837-7a04825f-051e-4709-8696-d07c617ed731.png)
+
+	
+	
 
  22.Write a C++ program to find minimum and maximum element from an unsorted array using divide and conquer method.
 						      
