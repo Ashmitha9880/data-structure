@@ -2827,7 +2827,16 @@ int main()
     }
     return 0;
 }						      
-							      
+	OUTPUT:
+	
+![image](https://user-images.githubusercontent.com/97940767/165236402-d4edafc9-9348-4cb1-89d6-c92a697ddab6.png)
+	
+	
+	
+	
+	
+	
+	
 							      
 21.	Write a C++ program for to implement BFS for undirected graph.								      
 							      
