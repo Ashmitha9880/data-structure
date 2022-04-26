@@ -2874,8 +2874,9 @@ int main()
     return 0;
 }
 
+![image](https://user-images.githubusercontent.com/97940767/165236054-2bf012cc-0947-4860-b726-5904310fc8d1.png)
 	
-	![image](https://user-images.githubusercontent.com/97940767/165235837-7a04825f-051e-4709-8696-d07c617ed731.png)
+	
 
 	
 	
