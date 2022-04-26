@@ -2875,11 +2875,77 @@ int main()
 }
 
 
-
+ 22.Write a C++ program to find minimum and maximum element from an unsorted array using divide and conquer method.
 						      
-	
+	#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+#include <conio.h>
+using namespace std;
+void findMinAndMax(int arr[], int low, int high, int &min, int &max)
+{
+if (low == high)	
+{
+if (max < arr[low])
+{
+max = arr[low];
+}
 
-	
+if (min > arr[high])
+{
+min = arr[high];
+}
+return;
+}
+if (high - low == 1)	
+{
+if (arr[low] < arr[high])	
+{
+if (min > arr[low])
+ {
+min = arr[low];
+}
+
+if (max < arr[high])
+{
+max = arr[high];
+}
+}
+else {
+if (min > arr[high])
+{
+min = arr[high];
+}
+
+if (max < arr[low])
+{
+max = arr[low];
+}
+}
+return;
+}
+int mid = (low + high) / 2;
+findMinAndMax(arr, low, mid, min, max);
+findMinAndMax(arr, mid + 1, high, min, max);
+}
+int main()
+{
+
+int arr[] = { 7, 2, 9, 3, 6, 7, 8, 4 };
+int n = sizeof(arr) / sizeof(arr[0]);
+int max = arr[0], min = arr[0];
+
+findMinAndMax(arr, 0, n - 1, min, max);
+
+cout << "The minimum array element is " << min << endl;
+cout << "The maximum array element is " << max;
+
+return 0;
+}
+
+OUTPUT:
+					      
+![image](https://user-images.githubusercontent.com/97940767/165235469-9d13baff-33d8-47f5-b896-bf0e9267b34c.png)
 	
 	
 	
